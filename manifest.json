@@ -1,7 +1,7 @@
 {
   "id": "leetcode-helper",
   "name": "leetcode helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.0.0",
   "description": "A fully integrated LeetCode workspace featuring a built-in code editor, test case runner, and a custom Socratic AI Copilot that provides algorithmic hints without spoiling the solution.",
   "author": "Relks",
