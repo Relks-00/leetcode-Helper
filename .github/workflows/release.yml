@@ -1,0 +1,32 @@
+name: Release Obsidian Plugin
+
+on:
+  release:
+    types: [published, edited]
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release Tag Name (e.g. 1.0.1)'
+        required: true
+        default: '1.0.1'
+
+permissions:
+  contents: write
+
+jobs:
+  upload-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Attach Assets to Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.event.release.tag_name || github.event.inputs.tag_name || github.ref_name }}
+        run: |
+          echo "Uploading release assets for tag $TAG..."
+          gh release upload "$TAG" main.js manifest.json styles.css --clobber
