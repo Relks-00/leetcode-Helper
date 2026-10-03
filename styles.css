@@ -2,36 +2,36 @@
 .workspace-leaf-content[data-type="leetcode-workspace-view"],
 .workspace-leaf-content[data-type="leetcode-workspace-view"] .view-content,
 .view-content:has(.leetcode-workspace-view) {
-  height: 100% !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-  position: relative !important;
-  display: block !important;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
 }
 
 .leetcode-workspace-view {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 100% !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
-  font-family: var(--font-ui, var(--font-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif)) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  font-family: var(--font-ui, var(--font-text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif));
   font-size: 12px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 .leetcode-workspace-view *,
@@ -46,24 +46,25 @@
 /* 4 equal quadrants covering the entire page */
 /* Flexible Resizable Workspace */
 .four-quadrant-workspace {
-  flex: 1 1 0% !important;
-  height: calc(100% - 60px) !important;
-  width: 100% !important;
-  min-height: 0 !important;
-  min-width: 0 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 0 !important;
-  padding: 6px !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-  background-color: var(--background-secondary) !important;
-  position: relative !important;
+  flex: 1 1 0%;
+  height: calc(100% - 60px);
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 6px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--background-secondary);
+  position: relative;
 }
 
 /* Dynamic Visibility Control */
-.is-panel-hidden {
-  display: none !important;
+.is-panel-hidden,
+.leetcode-workspace-view .is-panel-hidden {
+  display: none;
 }
 
 .workspace-col {
@@ -94,43 +95,44 @@
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  background-color: var(--background-primary) !important;
-  border: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   position: relative;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.is-panel-hidden {
-  display: none !important;
+.is-panel-hidden,
+.leetcode-workspace-view .is-panel-hidden {
+  display: none;
 }
 
 .workspace-quadrant:focus-within {
-  border-color: var(--interactive-accent) !important;
-  box-shadow: 0 4px 20px rgba(var(--interactive-accent-rgb, 168, 85, 247), 0.15) !important;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 4px 20px rgba(var(--interactive-accent-rgb, 168, 85, 247), 0.15);
 }
 
 /* Drag & Drop Visual Indicators */
 .workspace-col.drag-hover-col {
-  outline: 2px dashed #a855f7 !important;
-  outline-offset: -3px !important;
-  background-color: rgba(168, 85, 247, 0.05) !important;
+  outline: 2px dashed #a855f7;
+  outline-offset: -3px;
+  background-color: rgba(168, 85, 247, 0.05);
 }
 
 .workspace-quadrant.is-drag-source {
-  opacity: 0.45 !important;
-  border-color: #a855f7 !important;
+  opacity: 0.45;
+  border-color: #a855f7;
 }
 
 .workspace-quadrant.drag-hover-top {
-  border-top: 3px solid #c084fc !important;
-  box-shadow: 0 -4px 12px rgba(192, 132, 252, 0.4) !important;
+  border-top: 3px solid #c084fc;
+  box-shadow: 0 -4px 12px rgba(192, 132, 252, 0.4);
 }
 
 .workspace-quadrant.drag-hover-bottom {
-  border-bottom: 3px solid #c084fc !important;
-  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.4) !important;
+  border-bottom: 3px solid #c084fc;
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.4);
 }
 
 .section-drag-handle {
@@ -204,58 +206,58 @@
 
 /* Sub-split for Quadrant 1 (Question + Approach) */
 .quadrant-split-container {
-  flex: 1 1 0% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: 0 !important;
-  overflow: hidden !important;
-  width: 100% !important;
-  height: 100% !important;
-  position: relative !important;
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .quadrant-split-part {
   flex: 1 1 50%;
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: 48px !important;
-  overflow: hidden !important;
-  width: 100% !important;
-  position: relative !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 48px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /* Vertical Split Resizer (between left and right columns) */
 .workspace-resizer-vertical {
-  width: 8px !important;
-  min-width: 8px !important;
-  height: 100% !important;
-  cursor: col-resize !important;
-  background-color: transparent !important;
-  position: relative !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 25 !important;
-  transition: background-color 0.15s ease !important;
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  flex-shrink: 0 !important;
+  width: 8px;
+  min-width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 25;
+  transition: background-color 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  flex-shrink: 0;
 }
 
 .workspace-resizer-vertical::after {
-  content: "" !important;
-  width: 2px !important;
-  height: 100% !important;
-  background-color: #282836 !important;
-  border-radius: 1px !important;
-  transition: all 0.2s ease !important;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #282836;
+  border-radius: 1px;
+  transition: all 0.2s ease;
 }
 
 .workspace-resizer-vertical:hover::after,
 .workspace-resizer-vertical.is-dragging::after {
-  background-color: #a855f7 !important;
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7) !important;
-  width: 3px !important;
+  background-color: #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+  width: 3px;
 }
 
 .resizer-grip-v {
@@ -278,36 +280,36 @@
 
 /* Horizontal Split Resizer (between rows inside columns) */
 .workspace-resizer-horizontal {
-  height: 8px !important;
-  min-height: 8px !important;
-  width: 100% !important;
-  cursor: row-resize !important;
-  background-color: transparent !important;
-  position: relative !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 25 !important;
-  transition: background-color 0.15s ease !important;
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  flex-shrink: 0 !important;
+  height: 8px;
+  min-height: 8px;
+  width: 100%;
+  cursor: row-resize;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 25;
+  transition: background-color 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  flex-shrink: 0;
 }
 
 .workspace-resizer-horizontal::after {
-  content: "" !important;
-  height: 2px !important;
-  width: 100% !important;
-  background-color: #282836 !important;
-  border-radius: 1px !important;
-  transition: all 0.2s ease !important;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #282836;
+  border-radius: 1px;
+  transition: all 0.2s ease;
 }
 
 .workspace-resizer-horizontal:hover::after,
 .workspace-resizer-horizontal.is-dragging::after {
-  background-color: #a855f7 !important;
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7) !important;
-  height: 3px !important;
+  background-color: #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+  height: 3px;
 }
 
 .resizer-grip-h {
@@ -330,60 +332,60 @@
 
 /* While resizing, disable iframe / canvas pointer events and text selection */
 body.workspace-is-resizing {
-  user-select: none !important;
-  -webkit-user-select: none !important;
+  user-select: none;
+  -webkit-user-select: none;
 }
 body.workspace-is-resizing textarea,
 body.workspace-is-resizing iframe,
 body.workspace-is-resizing canvas {
-  pointer-events: none !important;
+  pointer-events: none;
 }
 
 /* Toggle Buttons in Top Bar */
 .workspace-toggle-group {
-  display: flex !important;
-  align-items: center !important;
-  gap: 4px !important;
-  background-color: rgba(22, 22, 30, 0.9) !important;
-  padding: 2.5px 4px !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(56, 56, 74, 0.7) !important;
-  backdrop-filter: blur(8px) !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgba(22, 22, 30, 0.9);
+  padding: 2.5px 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 56, 74, 0.7);
+  backdrop-filter: blur(8px);
 }
 
 .workspace-toggle-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 5px !important;
-  padding: 3.5px 8px !important;
-  border-radius: 6px !important;
-  font-size: 11px !important;
-  font-weight: 500 !important;
-  color: #9fa2b4 !important;
-  background: transparent !important;
-  border: 1px solid transparent !important;
-  cursor: pointer !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  position: relative !important;
-  user-select: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3.5px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9fa2b4;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  user-select: none;
 }
 
 .workspace-toggle-btn:hover {
-  color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .workspace-toggle-btn.is-active {
-  color: #f5f3ff !important;
-  background: linear-gradient(135deg, rgba(147, 51, 234, 0.4), rgba(99, 102, 241, 0.35)) !important;
-  border-color: rgba(168, 85, 247, 0.5) !important;
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3) !important;
+  color: #f5f3ff;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.4), rgba(99, 102, 241, 0.35));
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
 }
 
 .workspace-toggle-btn.is-active .toggle-dot {
-  background-color: #34d399 !important;
-  box-shadow: 0 0 6px #34d399 !important;
+  background-color: #34d399;
+  box-shadow: 0 0 6px #34d399;
 }
 
 .toggle-dot {
@@ -443,111 +445,111 @@ body.workspace-is-resizing canvas {
 }
 
 .workspace-textarea {
-  width: 100% !important;
-  height: 100% !important;
-  flex: 1 1 0% !important;
-  min-height: 0 !important;
-  background: transparent !important;
-  color: #dcddde !important;
-  border: none !important;
-  outline: none !important;
-  resize: none !important;
-  padding: 10px 12px !important;
-  font-family: inherit !important;
-  font-size: 12px !important;
-  line-height: 1.5 !important;
-  box-sizing: border-box !important;
-  user-select: text !important;
-  -webkit-user-select: text !important;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 0%;
+  min-height: 0;
+  background: transparent;
+  color: #dcddde;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .workspace-textarea::placeholder {
-  color: #5d606f !important;
+  color: #5d606f;
 }
 
 .workspace-textarea:focus {
-  outline: none !important;
-  background-color: rgba(255, 255, 255, 0.01) !important;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.01);
 }
 
 .workspace-description-view {
-  width: 100% !important;
-  height: 100% !important;
-  flex: 1 1 0% !important;
-  min-height: 0 !important;
-  background: transparent !important;
-  color: #dcddde !important;
-  padding: 12px 14px !important;
-  font-family: inherit !important;
-  font-size: 12.5px !important;
-  line-height: 1.65 !important;
-  box-sizing: border-box !important;
-  overflow-y: auto !important;
-  user-select: text !important;
-  -webkit-user-select: text !important;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 0%;
+  min-height: 0;
+  background: transparent;
+  color: #dcddde;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 12.5px;
+  line-height: 1.65;
+  box-sizing: border-box;
+  overflow-y: auto;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .workspace-description-view p {
-  margin-bottom: 0.75rem !important;
-  color: #dcddde !important;
+  margin-bottom: 0.75rem;
+  color: #dcddde;
 }
 
 .workspace-description-view code {
-  background: #252532 !important;
-  color: #f43f5e !important;
-  padding: 2px 5px !important;
-  border-radius: 4px !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
-  font-size: 11.5px !important;
+  background: #252532;
+  color: #f43f5e;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: var(--font-monospace, monospace);
+  font-size: 11.5px;
 }
 
 .workspace-description-view pre {
-  background: #14141a !important;
-  border: 1px solid #2d2d3d !important;
-  padding: 10px 12px !important;
-  border-radius: 6px !important;
-  overflow-x: auto !important;
-  margin: 10px 0 !important;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
-  font-size: 11.5px !important;
-  line-height: 1.5 !important;
-  color: #e2e4ed !important;
+  background: #14141a;
+  border: 1px solid #2d2d3d;
+  padding: 10px 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 10px 0;
+  font-family: var(--font-monospace, monospace);
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #e2e4ed;
 }
 
 .workspace-description-view pre code {
-  background: transparent !important;
-  color: inherit !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
 }
 
 .workspace-description-view ul,
 .workspace-description-view ol {
-  padding-left: 1.5rem !important;
-  margin-bottom: 0.75rem !important;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .workspace-description-view ul {
-  list-style-type: disc !important;
+  list-style-type: disc;
 }
 
 .workspace-description-view ol {
-  list-style-type: decimal !important;
+  list-style-type: decimal;
 }
 
 .workspace-description-view li {
-  margin-bottom: 0.35rem !important;
+  margin-bottom: 0.35rem;
 }
 
 .workspace-description-view strong {
-  color: #ffffff !important;
-  font-weight: 600 !important;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .workspace-description-view img {
-  max-width: 100% !important;
-  border-radius: 6px !important;
-  margin: 8px 0 !important;
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 8px 0;
 }
 
 
@@ -608,92 +610,92 @@ body.workspace-is-resizing canvas {
 .tab-close-btn,
 span.tab-close-btn,
 button.tab-close-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 14px !important;
-  height: 14px !important;
-  min-width: 14px !important;
-  min-height: 14px !important;
-  max-width: 14px !important;
-  max-height: 14px !important;
-  padding: 0 !important;
-  margin: 0 0 0 5px !important;
-  border: none !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border-radius: 3px !important;
-  color: #727585 !important;
-  cursor: pointer !important;
-  opacity: 0.65 !important;
-  transition: opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease !important;
-  flex-shrink: 0 !important;
-  box-sizing: border-box !important;
-  line-height: 1 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+  padding: 0;
+  margin: 0 0 0 5px;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 3px;
+  color: #727585;
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  line-height: 1;
 }
 
 .tab-close-btn:hover,
 span.tab-close-btn:hover,
 button.tab-close-btn:hover {
-  opacity: 1 !important;
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #ffffff !important;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .tab-close-btn svg,
 span.tab-close-btn svg,
 button.tab-close-btn svg {
-  width: 10px !important;
-  height: 10px !important;
-  stroke-width: 2 !important;
-  pointer-events: none !important;
-  display: block !important;
+  width: 10px;
+  height: 10px;
+  stroke-width: 2;
+  pointer-events: none;
+  display: block;
 }
 
 .workspace-tab.inactive-tab .tab-close-btn {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .workspace-tab.inactive-tab:hover .tab-close-btn {
-  opacity: 0.65 !important;
+  opacity: 0.65;
 }
 
 .workspace-tab.inactive-tab .tab-close-btn:hover {
-  opacity: 1 !important;
-  background-color: rgba(255, 255, 255, 0.15) !important;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Header bar icon buttons reset (history, new tab, options) */
 #workspace-tab-bar button,
 .workspace-leaf-content[data-type="leetcode-workspace-view"] #workspace-tab-bar button {
-  width: 22px !important;
-  height: 22px !important;
-  min-width: 22px !important;
-  min-height: 22px !important;
-  padding: 0 !important;
-  margin: 0 1px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 4px !important;
-  border: none !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: #6d7080 !important;
-  cursor: pointer !important;
-  transition: background-color 0.15s ease, color 0.15s ease !important;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  padding: 0;
+  margin: 0 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  color: #6d7080;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 #workspace-tab-bar button:hover:not(:disabled) {
-  background-color: #262633 !important;
-  color: #ffffff !important;
+  background-color: #262633;
+  color: #ffffff;
 }
 
 #workspace-tab-bar button:disabled {
-  opacity: 0.3 !important;
-  cursor: default !important;
+  opacity: 0.3;
+  cursor: default;
 }
 
 /* Interactive Tabs Styling */
@@ -705,239 +707,239 @@ button.tab-close-btn svg {
 }
 
 .workspace-tab.active-tab {
-  background-color: #24242c !important;
-  border-top: 2px solid #a855f7 !important;
-  border-left: 1px solid #333342 !important;
-  border-right: 1px solid #333342 !important;
-  color: #ffffff !important;
+  background-color: #24242c;
+  border-top: 2px solid #a855f7;
+  border-left: 1px solid #333342;
+  border-right: 1px solid #333342;
+  color: #ffffff;
 }
 
 .workspace-tab.inactive-tab {
-  border-top: 2px solid transparent !important;
-  border-left: 1px solid transparent !important;
-  border-right: 1px solid transparent !important;
-  color: #858896 !important;
+  border-top: 2px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  color: #858896;
 }
 
 .workspace-tab.inactive-tab:hover {
-  background-color: #202026 !important;
-  color: #e2e4ed !important;
+  background-color: #202026;
+  color: #e2e4ed;
 }
 
 .tab-rename-input {
-  background: #181822 !important;
-  color: #ffffff !important;
-  border: 1px solid #a855f7 !important;
-  border-radius: 4px !important;
-  padding: 1px 6px !important;
-  font-size: 11px !important;
-  outline: none !important;
-  max-width: 140px !important;
+  background: #181822;
+  color: #ffffff;
+  border: 1px solid #a855f7;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 11px;
+  outline: none;
+  max-width: 140px;
 }
 
 /* Header problem title / question number editable input */
 #problem-title-input {
-  background: transparent !important;
-  color: #ffffff !important;
-  border: 1px solid transparent !important;
-  border-radius: 4px !important;
-  padding: 2px 6px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  outline: none !important;
-  max-width: 220px !important;
-  transition: all 0.15s ease !important;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  max-width: 220px;
+  transition: all 0.15s ease;
 }
 
 #problem-title-input:hover {
-  background: #20202c !important;
-  border-color: #38384a !important;
+  background: #20202c;
+  border-color: #38384a;
 }
 
 #problem-title-input:focus {
-  background: #181822 !important;
-  border-color: #a855f7 !important;
-  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.4) !important;
+  background: #181822;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.4);
 }
 
 /* LeetCode Auto-Suggest Dropdown */
 .leetcode-dropdown-menu {
-  position: absolute !important;
-  top: calc(100% + 4px) !important;
-  left: 0 !important;
-  width: 320px !important;
-  max-width: 90vw !important;
-  background: #181822 !important;
-  border: 1px solid #36364a !important;
-  border-radius: 8px !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(168, 85, 247, 0.15) !important;
-  z-index: 9999 !important;
-  overflow: hidden !important;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 320px;
+  max-width: 90vw;
+  background: #181822;
+  border: 1px solid #36364a;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(168, 85, 247, 0.15);
+  z-index: 9999;
+  overflow: hidden;
 }
 
 .leetcode-suggest-item {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 6px 10px !important;
-  font-size: 11.5px !important;
-  color: #dcddde !important;
-  cursor: pointer !important;
-  transition: all 0.1s ease !important;
-  border-left: 2px solid transparent !important;
-  user-select: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  font-size: 11.5px;
+  color: #dcddde;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border-left: 2px solid transparent;
+  user-select: none;
 }
 
 .leetcode-suggest-item:hover,
 .leetcode-suggest-item.active {
-  background: #252538 !important;
-  color: #ffffff !important;
-  border-left-color: #a855f7 !important;
+  background: #252538;
+  color: #ffffff;
+  border-left-color: #a855f7;
 }
 
 .leetcode-suggest-item .diff-badge-easy {
-  color: #34d399 !important;
-  background: rgba(52, 211, 153, 0.12) !important;
-  border: 1px solid rgba(52, 211, 153, 0.25) !important;
-  padding: 1px 5px !important;
-  border-radius: 4px !important;
-  font-size: 9.5px !important;
-  font-weight: 600 !important;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 9.5px;
+  font-weight: 600;
 }
 
 .leetcode-suggest-item .diff-badge-med {
-  color: #fbbf24 !important;
-  background: rgba(251, 191, 36, 0.12) !important;
-  border: 1px solid rgba(251, 191, 36, 0.25) !important;
-  padding: 1px 5px !important;
-  border-radius: 4px !important;
-  font-size: 9.5px !important;
-  font-weight: 600 !important;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 9.5px;
+  font-weight: 600;
 }
 
 .leetcode-suggest-item .diff-badge-hard {
-  color: #f87171 !important;
-  background: rgba(248, 113, 113, 0.12) !important;
-  border: 1px solid rgba(248, 113, 113, 0.25) !important;
-  padding: 1px 5px !important;
-  border-radius: 4px !important;
-  font-size: 9.5px !important;
-  font-weight: 600 !important;
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.25);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 9.5px;
+  font-weight: 600;
 }
 
 #problem-title-input::placeholder {
-  color: #727585 !important;
-  font-weight: normal !important;
+  color: #727585;
+  font-weight: normal;
 }
 
 /* LeetCode Fetch Container */
 .leetcode-fetch-container {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  height: 28px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
 }
 
 .leetcode-fetch-container input {
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 10px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  line-height: 26px !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
-  outline: none !important;
-  width: 130px !important;
-  transition: all 0.15s ease !important;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  line-height: 26px;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  outline: none;
+  width: 130px;
+  transition: all 0.15s ease;
 }
 
 .leetcode-fetch-container input:focus {
-  border-color: var(--interactive-accent) !important;
-  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb, 124, 58, 237), 0.25) !important;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb, 124, 58, 237), 0.25);
 }
 
 .leetcode-fetch-container button,
 #leetcode-fetch-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 13px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.01em !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
-  border: 1px solid transparent !important;
-  cursor: pointer !important;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  white-space: nowrap !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 13px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .leetcode-fetch-container button:hover,
 #leetcode-fetch-btn:hover {
-  background-color: var(--interactive-accent-hover, var(--interactive-accent)) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-  transform: translateY(-0.5px) !important;
+  background-color: var(--interactive-accent-hover, var(--interactive-accent));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5px);
 }
 
 .leetcode-fetch-container button:active,
 #leetcode-fetch-btn:active {
-  transform: translateY(0.5px) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(0.5px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 #fetch-question-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  padding: 0 12px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
-  border: none !important;
-  cursor: pointer !important;
-  transition: all 0.15s ease !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  min-height: 28px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 
 #fetch-question-btn:hover {
-  background-color: var(--interactive-accent-hover, var(--interactive-accent)) !important;
+  background-color: var(--interactive-accent-hover, var(--interactive-accent));
 }
 
 #code-line-numbers {
-  user-select: none !important;
-  color: #55576a !important;
-  font-family: inherit !important;
-  font-size: 11.5px !important;
-  line-height: 1.625 !important;
-  padding: 12px 6px 12px 10px !important;
-  border-right: 1px solid #22222d !important;
-  background-color: #121217 !important;
-  text-align: right !important;
+  user-select: none;
+  color: #55576a;
+  font-family: inherit;
+  font-size: 11.5px;
+  line-height: 1.625;
+  padding: 12px 6px 12px 10px;
+  border-right: 1px solid #22222d;
+  background-color: #121217;
+  text-align: right;
 }
 
 #code-editor-input {
-  line-height: 1.625 !important;
-  tab-size: 4 !important;
-  -moz-tab-size: 4 !important;
-  white-space: pre !important;
-  word-wrap: normal !important;
-  overflow-x: auto !important;
+  line-height: 1.625;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: auto;
 }
 
 .canvas-note-card {
@@ -2420,11 +2422,11 @@ button.tab-close-btn svg {
 }
 
 .underline {
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
 .decoration-amber-400 {
-  text-decoration-color: #fbbf24;
+  text-decoration: underline;
 }
 
 .antialiased {
@@ -2508,9 +2510,7 @@ button.tab-close-btn svg {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2649,52 +2649,52 @@ button.tab-close-btn svg {
 }
 
 #copilot-ai-select {
-  background-color: #20202a !important;
-  color: #d8b4fe !important;
-  font-size: 11px !important;
-  font-weight: 500 !important;
-  border-radius: 6px !important;
-  padding: 2px 6px !important;
-  border: 1px solid rgba(168, 85, 247, 0.35) !important;
-  outline: none !important;
-  cursor: pointer !important;
-  max-width: 155px !important;
+  background-color: #20202a;
+  color: #d8b4fe;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 2px 6px;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  outline: none;
+  cursor: pointer;
+  max-width: 155px;
 }
 
 #copilot-ai-select:hover,
 #copilot-ai-select:focus {
-  border-color: rgba(168, 85, 247, 0.8) !important;
+  border-color: rgba(168, 85, 247, 0.8);
 }
 
 #copilot-ai-select optgroup {
-  background-color: #17171d !important;
-  color: #9496a8 !important;
-  font-weight: 600 !important;
+  background-color: #17171d;
+  color: #9496a8;
+  font-weight: 600;
 }
 
 #copilot-ai-select option {
-  background-color: #20202a !important;
-  color: #f1f2f6 !important;
-  font-weight: normal !important;
+  background-color: #20202a;
+  color: #f1f2f6;
+  font-weight: normal;
 }
 
 #copilot-key-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-radius: 6px !important;
-  padding: 3px 6px !important;
-  cursor: pointer !important;
-  color: #9ba0b4 !important;
-  transition: all 0.15s ease !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  padding: 3px 6px;
+  cursor: pointer;
+  color: #9ba0b4;
+  transition: all 0.15s ease;
 }
 
 #copilot-key-btn:hover {
-  background: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
-  border-color: var(--interactive-accent) !important;
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+  border-color: var(--interactive-accent);
 }
 
 /* ==========================================================================
@@ -2705,39 +2705,39 @@ button.tab-close-btn svg {
 
 /* 1. Header Bar and Top Tab Strip */
 .leetcode-workspace-view [data-purpose="tab-header"] {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border-bottom: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-muted) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border-bottom: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view .workspace-tab {
-  color: var(--text-muted) !important;
-  border-radius: 6px 6px 0 0 !important;
-  font-family: var(--font-ui, inherit) !important;
+  color: var(--text-muted);
+  border-radius: 6px 6px 0 0;
+  font-family: var(--font-ui, inherit);
 }
 
 .leetcode-workspace-view .workspace-tab.inactive-tab {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  color: var(--text-muted) !important;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view .workspace-tab.inactive-tab:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-tab.active-tab {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
-  border-top: 2px solid var(--interactive-accent) !important;
-  border-left: 1px solid var(--background-modifier-border) !important;
-  border-right: 1px solid var(--background-modifier-border) !important;
-  border-bottom: 1px solid var(--background-primary) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border-top: 2px solid var(--interactive-accent);
+  border-left: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--background-primary);
 }
 
 .leetcode-workspace-view .tab-title-text {
-  color: inherit !important;
+  color: inherit;
 }
 
 /* 2. Top Bar Navigation Buttons & Icons */
@@ -2746,7 +2746,7 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #history-back-btn,
 .leetcode-workspace-view #history-forward-btn,
 .leetcode-workspace-view #open-vault-note-btn {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view #workspace-tab-bar button:hover:not(:disabled),
@@ -2754,66 +2754,66 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #history-back-btn:hover:not(:disabled),
 .leetcode-workspace-view #history-forward-btn:hover:not(:disabled),
 .leetcode-workspace-view #open-vault-note-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #new-page-btn {
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--interactive-accent) !important;
-  color: var(--text-accent, var(--interactive-accent)) !important;
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--interactive-accent);
+  color: var(--text-accent, var(--interactive-accent));
 }
 
 .leetcode-workspace-view #new-page-btn:hover {
-  background-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
 }
 
 /* 3. Panel Toggle Buttons (Code Area, AI Helper, Whiteboard) */
 .leetcode-workspace-view .workspace-toggle-group {
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
 }
 
 .leetcode-workspace-view .workspace-toggle-btn {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view .workspace-toggle-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-toggle-btn.is-active {
-  background: var(--interactive-accent) !important;
-  border-color: var(--interactive-accent-hover, var(--interactive-accent)) !important;
-  color: var(--text-on-accent, #ffffff) !important;
+  background: var(--interactive-accent);
+  border-color: var(--interactive-accent-hover, var(--interactive-accent));
+  color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view .workspace-toggle-btn.is-active .toggle-dot {
-  background-color: var(--text-on-accent, #ffffff) !important;
+  background-color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view .toggle-dot {
-  background-color: var(--text-faint) !important;
+  background-color: var(--text-faint);
 }
 
 .leetcode-workspace-view .workspace-floating-tooltip {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-floating-tooltip .tooltip-title {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-floating-tooltip .tooltip-desc {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view .workspace-floating-tooltip .tooltip-status {
-  color: var(--text-accent, var(--interactive-accent)) !important;
+  color: var(--text-accent, var(--interactive-accent));
 }
 
 /* 4. Quadrant Headers and Subheaders */
@@ -2821,42 +2821,42 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #question-part > div:first-child,
 .leetcode-workspace-view #approach-part > div:first-child,
 .leetcode-workspace-view #test-runner-panel > div:first-child {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border-bottom: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border-bottom: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
 }
 
 /* 5. Sub-tabs inside Quadrant Headers (#problem-tabs, #case-tabs) */
 .leetcode-workspace-view #problem-tabs,
 .leetcode-workspace-view #case-tabs {
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
 }
 
 .leetcode-workspace-view #problem-tabs .tab-btn,
 .leetcode-workspace-view #case-tabs .case-btn {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view #problem-tabs .tab-btn:hover,
 .leetcode-workspace-view #case-tabs .case-btn:hover {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #problem-tabs .tab-btn.bg-\[\#242430\],
 .leetcode-workspace-view #case-tabs .case-btn.bg-\[\#20202a\] {
-  background-color: var(--background-primary) !important;
-  color: var(--text-accent, var(--interactive-accent)) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  background-color: var(--background-primary);
+  color: var(--text-accent, var(--interactive-accent));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 /* 6. Inputs and Textareas */
 .leetcode-workspace-view .workspace-textarea,
 .leetcode-workspace-view #question-input,
 .leetcode-workspace-view #approach-input {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
-  font-family: var(--font-text, inherit) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  font-family: var(--font-text, inherit);
 }
 
 .leetcode-workspace-view .workspace-textarea::placeholder,
@@ -2864,180 +2864,180 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #approach-input::placeholder,
 .leetcode-workspace-view #code-editor-input::placeholder,
 .leetcode-workspace-view #chat-input::placeholder {
-  color: var(--text-faint) !important;
+  color: var(--text-faint);
 }
 
 .leetcode-workspace-view #problem-title-input {
-  color: var(--text-normal) !important;
-  font-family: var(--font-ui, inherit) !important;
+  color: var(--text-normal);
+  font-family: var(--font-ui, inherit);
 }
 
 .leetcode-workspace-view #problem-title-input:hover {
-  background-color: var(--background-modifier-hover) !important;
+  background-color: var(--background-modifier-hover);
 }
 
 .leetcode-workspace-view #problem-title-input:focus {
-  background-color: var(--background-modifier-form-field, var(--background-primary-alt)) !important;
-  border-color: var(--interactive-accent) !important;
-  box-shadow: 0 0 0 1px var(--interactive-accent) !important;
+  background-color: var(--background-modifier-form-field, var(--background-primary-alt));
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 1px var(--interactive-accent);
 }
 
 .leetcode-workspace-view #leetcode-id-input,
 .leetcode-workspace-view .leetcode-fetch-container input {
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 10px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  line-height: 26px !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
-  outline: none !important;
-  width: 130px !important;
-  transition: all 0.15s ease !important;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  line-height: 26px;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  outline: none;
+  width: 130px;
+  transition: all 0.15s ease;
 }
 
 .leetcode-workspace-view #leetcode-id-input:focus,
 .leetcode-workspace-view .leetcode-fetch-container input:focus {
-  border-color: var(--interactive-accent) !important;
-  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb, 124, 58, 237), 0.25) !important;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb, 124, 58, 237), 0.25);
 }
 
 .leetcode-workspace-view #leetcode-fetch-btn,
 .leetcode-workspace-view #fetch-question-btn,
 .leetcode-workspace-view .leetcode-fetch-container button,
 .leetcode-workspace-view .workspace-btn-primary {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 14px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.01em !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background: var(--interactive-accent) !important;
-  border: 1px solid transparent !important;
-  color: var(--text-on-accent, #ffffff) !important;
-  cursor: pointer !important;
-  user-select: none !important;
-  white-space: nowrap !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-m, 6px);
+  background: var(--interactive-accent);
+  border: 1px solid transparent;
+  color: var(--text-on-accent, #ffffff);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .leetcode-workspace-view #leetcode-fetch-btn:hover,
 .leetcode-workspace-view #fetch-question-btn:hover,
 .leetcode-workspace-view .leetcode-fetch-container button:hover,
 .leetcode-workspace-view .workspace-btn-primary:hover {
-  background: var(--interactive-accent-hover, var(--interactive-accent)) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-  transform: translateY(-0.5px) !important;
+  background: var(--interactive-accent-hover, var(--interactive-accent));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5px);
 }
 
 .leetcode-workspace-view #leetcode-fetch-btn:active,
 .leetcode-workspace-view #fetch-question-btn:active,
 .leetcode-workspace-view .leetcode-fetch-container button:active,
 .leetcode-workspace-view .workspace-btn-primary:active {
-  transform: translateY(0.5px) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(0.5px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .leetcode-workspace-view .leetcode-dropdown-menu {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
 .leetcode-workspace-view .leetcode-suggest-item {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .leetcode-suggest-item:hover,
 .leetcode-workspace-view .leetcode-suggest-item.active {
-  background-color: var(--background-modifier-hover) !important;
-  border-left-color: var(--interactive-accent) !important;
+  background-color: var(--background-modifier-hover);
+  border-left-color: var(--interactive-accent);
 }
 
 /* 7. Markdown Description View */
 .leetcode-workspace-view .workspace-description-view {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-description-view p,
 .leetcode-workspace-view .workspace-description-view li,
 .leetcode-workspace-view .workspace-description-view strong {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .workspace-description-view code {
-  background: var(--code-background, var(--background-primary-alt)) !important;
-  color: var(--code-normal, var(--text-accent, var(--interactive-accent))) !important;
-  font-family: var(--font-monospace, monospace) !important;
+  background: var(--code-background, var(--background-primary-alt));
+  color: var(--code-normal, var(--text-accent, var(--interactive-accent)));
+  font-family: var(--font-monospace, monospace);
 }
 
 .leetcode-workspace-view .workspace-description-view pre {
-  background: var(--code-background, var(--background-primary-alt)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--code-normal, var(--text-normal)) !important;
-  font-family: var(--font-monospace, monospace) !important;
+  background: var(--code-background, var(--background-primary-alt));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--code-normal, var(--text-normal));
+  font-family: var(--font-monospace, monospace);
 }
 
 /* 8. Code Editor & Runner Panel */
 .leetcode-workspace-view #editor-body-container {
-  background-color: var(--code-background, var(--background-primary)) !important;
+  background-color: var(--code-background, var(--background-primary));
 }
 
 .leetcode-workspace-view #code-line-numbers {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border-right: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-faint) !important;
-  font-family: var(--font-monospace, monospace) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border-right: 1px solid var(--background-modifier-border);
+  color: var(--text-faint);
+  font-family: var(--font-monospace, monospace);
 }
 
 .leetcode-workspace-view #code-editor-input {
-  background-color: transparent !important;
-  color: var(--code-normal, var(--text-normal)) !important;
-  font-family: var(--font-monospace, monospace) !important;
-  caret-color: var(--interactive-accent) !important;
+  background-color: transparent;
+  color: var(--code-normal, var(--text-normal));
+  font-family: var(--font-monospace, monospace);
+  caret-color: var(--interactive-accent);
 }
 
 .leetcode-workspace-view #lang-select {
-  height: 28px !important;
-  min-height: 28px !important;
-  padding: 0 10px !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-accent, var(--interactive-accent)) !important;
-  font-family: var(--font-monospace, monospace) !important;
-  font-size: 11.5px !important;
-  outline: none !important;
-  cursor: pointer !important;
+  height: 28px;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-accent, var(--interactive-accent));
+  font-family: var(--font-monospace, monospace);
+  font-size: 11.5px;
+  outline: none;
+  cursor: pointer;
 }
 
 .leetcode-workspace-view #lang-select option {
-  background-color: var(--background-secondary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
 }
 
 /* Header Separator */
 .leetcode-workspace-view .workspace-header-separator,
 .leetcode-workspace-view .h-3\.5.w-\[1px\] {
-  height: 18px !important;
-  width: 1px !important;
-  background-color: var(--background-modifier-border) !important;
-  margin: 0 4px !important;
-  flex-shrink: 0 !important;
+  height: 18px;
+  width: 1px;
+  background-color: var(--background-modifier-border);
+  margin: 0 4px;
+  flex-shrink: 0;
 }
 
 /* Icon Buttons (Format, Reset, Clear, Pin) */
@@ -3046,21 +3046,21 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #reset-code-btn,
 .leetcode-workspace-view #clear-chat-btn,
 .leetcode-workspace-view #pin-copilot-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 28px !important;
-  height: 28px !important;
-  min-width: 28px !important;
-  min-height: 28px !important;
-  padding: 0 !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: transparent !important;
-  border: 1px solid transparent !important;
-  color: var(--text-muted) !important;
-  cursor: pointer !important;
-  transition: all 0.15s ease !important;
-  box-sizing: border-box !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+  border-radius: var(--radius-m, 6px);
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
 }
 
 .leetcode-workspace-view .workspace-icon-btn:hover,
@@ -3068,319 +3068,319 @@ button.tab-close-btn svg {
 .leetcode-workspace-view #reset-code-btn:hover,
 .leetcode-workspace-view #clear-chat-btn:hover,
 .leetcode-workspace-view #pin-copilot-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
-  border-color: var(--background-modifier-border) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+  border-color: var(--background-modifier-border);
 }
 
 /* Run Code Button */
 .leetcode-workspace-view #run-code-btn,
 .leetcode-workspace-view .workspace-btn-secondary {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 13px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.01em !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
-  cursor: pointer !important;
-  user-select: none !important;
-  white-space: nowrap !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) !important;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 13px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .leetcode-workspace-view #run-code-btn:hover,
 .leetcode-workspace-view .workspace-btn-secondary:hover {
-  background-color: var(--background-modifier-hover) !important;
-  border-color: var(--background-modifier-border-hover, var(--background-modifier-border)) !important;
-  color: var(--text-normal) !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
-  transform: translateY(-0.5px) !important;
+  background-color: var(--background-modifier-hover);
+  border-color: var(--background-modifier-border-hover, var(--background-modifier-border));
+  color: var(--text-normal);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.5px);
 }
 
 .leetcode-workspace-view #run-code-btn:active,
 .leetcode-workspace-view .workspace-btn-secondary:active {
-  transform: translateY(0.5px) !important;
-  box-shadow: none !important;
+  transform: translateY(0.5px);
+  box-shadow: none;
 }
 
 .leetcode-workspace-view #run-code-btn svg {
-  width: 12px !important;
-  height: 12px !important;
-  flex-shrink: 0 !important;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 /* Submit Code Button */
 .leetcode-workspace-view #submit-code-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 0 14px !important;
-  font-family: var(--font-ui, var(--font-text, inherit)) !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.01em !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background: var(--interactive-accent) !important;
-  border: 1px solid transparent !important;
-  color: var(--text-on-accent, #ffffff) !important;
-  cursor: pointer !important;
-  user-select: none !important;
-  white-space: nowrap !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  font-family: var(--font-ui, var(--font-text, inherit));
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-m, 6px);
+  background: var(--interactive-accent);
+  border: 1px solid transparent;
+  color: var(--text-on-accent, #ffffff);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .leetcode-workspace-view #submit-code-btn:hover {
-  background: var(--interactive-accent-hover, var(--interactive-accent)) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22) !important;
-  transform: translateY(-0.5px) !important;
+  background: var(--interactive-accent-hover, var(--interactive-accent));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22);
+  transform: translateY(-0.5px);
 }
 
 .leetcode-workspace-view #submit-code-btn:active {
-  transform: translateY(0.5px) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(0.5px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .leetcode-workspace-view #submit-code-btn svg {
-  width: 13px !important;
-  height: 13px !important;
-  flex-shrink: 0 !important;
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
 }
 
 .leetcode-workspace-view #test-runner-panel {
-  background-color: var(--background-primary) !important;
-  border-top: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-primary);
+  border-top: 1px solid var(--background-modifier-border);
 }
 
 .leetcode-workspace-view #test-output-panel {
-  background-color: var(--background-primary) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .test-case-row {
-  background-color: var(--background-primary-alt, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-primary-alt, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
 }
 
 /* 9. AI Helper (Copilot) */
 .leetcode-workspace-view #section-copilot {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
 }
 
 .leetcode-workspace-view #chat-messages-container {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
 }
 
 .leetcode-workspace-view #prompt-chips {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border-bottom: 1px solid var(--background-modifier-border) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border-bottom: 1px solid var(--background-modifier-border);
 }
 
 .leetcode-workspace-view .prompt-chip {
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-muted) !important;
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view .prompt-chip:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #copilot-key-btn {
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-muted) !important;
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view #copilot-key-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
-  border-color: var(--interactive-accent) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+  border-color: var(--interactive-accent);
 }
 
 .leetcode-workspace-view [data-purpose="chat-messages"] > div > div[class*="bg-"] {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view [data-purpose="chat-messages"] > div.justify-end > div[class*="bg-"] {
-  background-color: var(--interactive-accent) !important;
-  border-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view [data-purpose="chat-messages"] > div.justify-end > div[class*="bg-"] p {
-  color: var(--text-on-accent, #ffffff) !important;
+  color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view #chat-input {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #send-chat-btn {
-  background-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view #send-chat-btn:hover {
-  background-color: var(--interactive-accent-hover, var(--interactive-accent)) !important;
+  background-color: var(--interactive-accent-hover, var(--interactive-accent));
 }
 
 /* 10. Whiteboard Architecture Canvas */
 .leetcode-workspace-view #canvas-viewport {
-  background-color: var(--background-primary) !important;
+  background-color: var(--background-primary);
 }
 
 .leetcode-workspace-view .bg-dot-grid {
-  background-image: radial-gradient(var(--background-modifier-border) 1.2px, transparent 1.2px) !important;
+  background-image: radial-gradient(var(--background-modifier-border) 1.2px, transparent 1.2px);
 }
 
 .leetcode-workspace-view .canvas-note-card {
-  background: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-normal) !important;
+  background: var(--background-secondary-alt, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .canvas-note-card textarea {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #zoom-out-btn,
 .leetcode-workspace-view #zoom-in-btn,
 .leetcode-workspace-view #zoom-reset-btn {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view #zoom-out-btn:hover,
 .leetcode-workspace-view #zoom-in-btn:hover,
 .leetcode-workspace-view #zoom-reset-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view #zoom-text {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 /* 11. Dock Buttons, Drag Handles, and Resizers */
 .leetcode-workspace-view .workspace-dock-group,
 .leetcode-workspace-view div:has(> .section-dock-btn) {
-  display: inline-flex !important;
-  align-items: center !important;
-  height: 28px !important;
-  min-height: 28px !important;
-  box-sizing: border-box !important;
-  padding: 2px 4px !important;
-  border-radius: var(--radius-m, 6px) !important;
-  background-color: var(--background-modifier-form-field, var(--background-secondary)) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  gap: 2px !important;
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  min-height: 28px;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  border-radius: var(--radius-m, 6px);
+  background-color: var(--background-modifier-form-field, var(--background-secondary));
+  border: 1px solid var(--background-modifier-border);
+  gap: 2px;
 }
 
 .leetcode-workspace-view .section-dock-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 22px !important;
-  height: 22px !important;
-  min-width: 22px !important;
-  min-height: 22px !important;
-  padding: 0 !important;
-  border-radius: 4px !important;
-  font-size: 12px !important;
-  color: var(--text-muted) !important;
-  background: transparent !important;
-  border: none !important;
-  cursor: pointer !important;
-  transition: all 0.15s ease !important;
-  line-height: 1 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
 }
 
 .leetcode-workspace-view .section-dock-btn:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .section-drag-handle {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 20px !important;
-  height: 22px !important;
-  min-width: 20px !important;
-  min-height: 22px !important;
-  padding: 0 !important;
-  border-radius: 4px !important;
-  font-size: 12px !important;
-  letter-spacing: -1px !important;
-  color: var(--text-muted) !important;
-  background: transparent !important;
-  cursor: grab !important;
-  transition: all 0.15s ease !important;
-  user-select: none !important;
-  line-height: 1 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 22px;
+  min-width: 20px;
+  min-height: 22px;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: -1px;
+  color: var(--text-muted);
+  background: transparent;
+  cursor: grab;
+  transition: all 0.15s ease;
+  user-select: none;
+  line-height: 1;
 }
 
 .leetcode-workspace-view .section-drag-handle:hover {
-  background-color: var(--background-modifier-hover) !important;
-  color: var(--interactive-accent) !important;
+  background-color: var(--background-modifier-hover);
+  color: var(--interactive-accent);
 }
 
 .leetcode-workspace-view .workspace-resizer-vertical::after,
 .leetcode-workspace-view .workspace-resizer-horizontal::after {
-  background-color: var(--background-modifier-border) !important;
+  background-color: var(--background-modifier-border);
 }
 
 .leetcode-workspace-view .workspace-resizer-vertical:hover::after,
 .leetcode-workspace-view .workspace-resizer-vertical.is-dragging::after,
 .leetcode-workspace-view .workspace-resizer-horizontal:hover::after,
 .leetcode-workspace-view .workspace-resizer-horizontal.is-dragging::after {
-  background-color: var(--interactive-accent) !important;
-  box-shadow: 0 0 10px var(--interactive-accent) !important;
+  background-color: var(--interactive-accent);
+  box-shadow: 0 0 10px var(--interactive-accent);
 }
 
 .leetcode-workspace-view .resizer-grip-v,
 .leetcode-workspace-view .resizer-grip-h {
-  background-color: var(--background-modifier-border-hover, var(--text-faint)) !important;
+  background-color: var(--background-modifier-border-hover, var(--text-faint));
 }
 
 .leetcode-workspace-view .workspace-resizer-vertical:hover .resizer-grip-v,
 .leetcode-workspace-view .workspace-resizer-vertical.is-dragging .resizer-grip-v,
 .leetcode-workspace-view .workspace-resizer-horizontal:hover .resizer-grip-h,
 .leetcode-workspace-view .workspace-resizer-horizontal.is-dragging .resizer-grip-h {
-  background-color: var(--interactive-accent) !important;
-  box-shadow: 0 0 8px var(--interactive-accent) !important;
+  background-color: var(--interactive-accent);
+  box-shadow: 0 0 8px var(--interactive-accent);
 }
 
 /* 12. Bottom Status Bar */
 .leetcode-workspace-view [data-purpose="status-bar"] {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
-  border-top: 1px solid var(--background-modifier-border) !important;
-  color: var(--text-muted) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
 }
 
 .leetcode-workspace-view #reveal-note-btn:hover {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view [data-purpose="status-bar"] span {
@@ -3389,32 +3389,32 @@ button.tab-close-btn svg {
 
 /* 13. Dynamic Theme Overrides for Tailwind Utility Classes */
 .leetcode-workspace-view .text-white {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .hover\:text-white:hover {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view [class*="text-emerald-"],
 .leetcode-workspace-view .text-emerald-400 {
-  color: var(--interactive-success, #10b981) !important;
+  color: var(--interactive-success, #10b981);
 }
 
 .leetcode-workspace-view [class*="text-purple-"],
 .leetcode-workspace-view .text-purple-300,
 .leetcode-workspace-view .text-purple-400 {
-  color: var(--text-accent, var(--interactive-accent)) !important;
+  color: var(--text-accent, var(--interactive-accent));
 }
 
 .leetcode-workspace-view [class*="bg-purple-600"],
 .leetcode-workspace-view [class*="bg-purple-700"] {
-  background-color: var(--interactive-accent) !important;
-  color: var(--text-on-accent, #ffffff) !important;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent, #ffffff);
 }
 
 .leetcode-workspace-view [class*="border-purple-"] {
-  border-color: var(--interactive-accent) !important;
+  border-color: var(--interactive-accent);
 }
 
 .leetcode-workspace-view .bg-\[\#17171b\],
@@ -3426,7 +3426,7 @@ button.tab-close-btn svg {
 .leetcode-workspace-view .bg-\[\#1e1e24\],
 .leetcode-workspace-view .bg-\[\#161619\],
 .leetcode-workspace-view .bg-\[\#17171d\] {
-  background-color: var(--background-secondary-alt, var(--background-secondary)) !important;
+  background-color: var(--background-secondary-alt, var(--background-secondary));
 }
 
 .leetcode-workspace-view .bg-\[\#1b1b22\],
@@ -3434,7 +3434,7 @@ button.tab-close-btn svg {
 .leetcode-workspace-view .bg-\[\#242430\],
 .leetcode-workspace-view .bg-\[\#1e1e26\],
 .leetcode-workspace-view .bg-\[\#24242c\] {
-  background-color: var(--background-modifier-form-field, var(--background-primary-alt, var(--background-secondary))) !important;
+  background-color: var(--background-modifier-form-field, var(--background-primary-alt, var(--background-secondary)));
 }
 
 .leetcode-workspace-view .border-\[\#2d2d38\],
@@ -3451,7 +3451,7 @@ button.tab-close-btn svg {
 .leetcode-workspace-view .border-\[\#36364a\],
 .leetcode-workspace-view .border-\[\#38384a\],
 .leetcode-workspace-view .border-\[\#3f3f54\] {
-  border-color: var(--background-modifier-border) !important;
+  border-color: var(--background-modifier-border);
 }
 
 .leetcode-workspace-view .text-\[\#dcddde\],
@@ -3462,7 +3462,7 @@ button.tab-close-btn svg {
 .leetcode-workspace-view .text-\[\#c2c5d1\],
 .leetcode-workspace-view .text-\[\#babdc9\],
 .leetcode-workspace-view .text-\[\#ced1e0\] {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
 }
 
 .leetcode-workspace-view .text-\[\#7d8095\],
@@ -3485,6 +3485,6 @@ button.tab-close-btn svg {
 .leetcode-workspace-view .text-\[\#626574\],
 .leetcode-workspace-view .text-\[\#56596b\],
 .leetcode-workspace-view .text-\[\#5b5d6e\] {
-  color: var(--text-muted) !important;
+  color: var(--text-muted);
 }
 
