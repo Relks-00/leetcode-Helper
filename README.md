@@ -3,7 +3,11 @@ An all-in-one algorithmic practice workspace for Obsidian.
 
 LeetCode Helper transforms your Obsidian vault into a fully integrated coding environment. Stop context-switching between your browser, IDE, and notes. Fetch problems, write code, run test cases, diagram architectures, and get Socratic AI hints—all without ever leaving your vault.
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/relks)
+<p align="center">
+  <a href="https://buymeacoffee.com/relks" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217" height="60">
+  </a>
+</p>
 
 ✨ Core Features
 Direct Problem Sync: Enter a LeetCode problem ID to instantly fetch the description, constraints, and default test cases straight into your workspace.
@@ -48,4 +52,8 @@ Use the Socratic Copilot chat window on the right to ask for hints, complexity a
 
 ☕ Support the Author
 Building and maintaining open-source Obsidian plugins takes time (and a lot of caffeine!). If this tool helped you nail an interview or improve your daily coding practice, consider supporting the project.
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/relks)
+<p align="center">
+  <a href="https://buymeacoffee.com/relks" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217" height="60">
+  </a>
+</p>
