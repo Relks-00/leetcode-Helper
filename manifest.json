@@ -1,10 +1,10 @@
 {
-    "id": "main-plugin",
-    "name": "Leetcode Helper",
-    "version": "1.0.0",
-    "minAppVersion": "0.15.0",
-    "description": "Obsidian LeetCode Workspace - Modern Minimal Edition with 4-Quadrant problem solving, Socratic AI Copilot, code runner, and architecture whiteboard.",
-    "author": "Relks",
-    "authorUrl": "https://obsidian.md",
-    "isDesktopOnly": true
+  "id": "leetcode-helper",
+  "name": "leetcode helper",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "A fully integrated LeetCode workspace featuring a built-in code editor, test case runner, and a custom Socratic AI Copilot that provides algorithmic hints without spoiling the solution.",
+  "author": "Relks",
+  "isDesktopOnly": false,
+  "fundingUrl": "https://buymeacoffee.com/relks"
 }
