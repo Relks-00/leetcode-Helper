@@ -1,7 +1,6 @@
 /* Ensure Obsidian leaf container and content stretch to 100% */
 .workspace-leaf-content[data-type="leetcode-workspace-view"],
-.workspace-leaf-content[data-type="leetcode-workspace-view"] .view-content,
-.view-content:has(.leetcode-workspace-view) {
+.workspace-leaf-content[data-type="leetcode-workspace-view"] .view-content {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -3284,7 +3283,7 @@ button.tab-close-btn svg {
 
 /* 11. Dock Buttons, Drag Handles, and Resizers */
 .leetcode-workspace-view .workspace-dock-group,
-.leetcode-workspace-view div:has(> .section-dock-btn) {
+.leetcode-workspace-view .section-dock-group {
   display: inline-flex;
   align-items: center;
   height: 28px;
